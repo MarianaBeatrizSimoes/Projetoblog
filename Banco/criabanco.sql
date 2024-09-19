@@ -19,7 +19,7 @@ CREATE TABLE post(
     usuario_id int not null,
     data_criacao datetime not null default current_timestamp,
     data_postagem datetime not null,
-    primary key(id)
+    primary key(id),
     key fk_post_usuario_idx(usuario_id),
     constraint fk_post_usuario foreign key (usuario_id) references usuario(id)
 );
