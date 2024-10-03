@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post | Projeto para Web com PHP</title>
-    <link rel="stylesheet" href="lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">

@@ -29,7 +29,7 @@ switch($acao){
 
         break;
     case 'update':
-        $id = (int)$id;
+        $id = (int) $id;
         $dados = [
             'nome' => $nome,
             'email' => $email
@@ -109,5 +109,5 @@ switch($acao){
         exit;
         break;
 }
-header('Location: ../index.php');
+//header('Location: ../index.php');
 ?>
