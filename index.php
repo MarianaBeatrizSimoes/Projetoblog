@@ -35,6 +35,7 @@
     require_once 'core/conexao_mysql.php';
     require_once 'core/sql.php';
     require_once 'core/mysql.php';
+    date_default_timezone_set('America/Sao_Paulo');
 
     foreach($_GET as $indice => $dado){
         $$indice = limparDados($dado);
@@ -47,9 +48,15 @@
     if(!empty($busca)){
         $criterio[] = [
             'AND',
+            'titulo',
+            'like',
+            "%{$busca}%"
+        ];
+        $criterio[] = [
+            'OR',
             'texto',
             'like',
-            "{$busca}"
+            "%{$busca}%"
         ];
     }
 

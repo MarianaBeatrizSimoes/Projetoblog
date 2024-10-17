@@ -14,7 +14,7 @@ $posts = buscar(
         'titulo',
         'data_postagem',
         'texto',
-        '(select usuario from usuario where usuario.id = post.usuario_id) as nome'
+        '(select nome from usuario where usuario.id = post.usuario_id) as nome'
     ],
     [
         ['id', '=', $post]

@@ -50,7 +50,7 @@
                 <input type="hidden" name="id" value="<?php echo $entidade['id'] ?? '' ?>">
                 <div class="form-group">
                 <label for="titulo">Título</label>
-                <input  class="form-control" type="text" require="required" id="titulo" name="titulo" value="<?php echo $entidade['titulo'] ?? '' ?>">
+                <input  class="form-control" type="text" require="required" id="titulo" name="titulo" value="<?php echo $entidade['titulo']['texto'] ?? '' ?>">
                 </div>
                 <div class="form-group">
                     <label for="texto">Texto</label>
